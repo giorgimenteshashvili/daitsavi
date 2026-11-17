@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>დაიცავი ილიაუნი</title>
+    <link rel="stylesheet" href="DI.css">
+    <link rel="icon" href="pic/logo.jpg" type="image/png">
+</head>
+<body>
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <h1>მოდი აქციაზე!</h1>
+            <h2>დაიცავი შენი უნივერსიტეტი</h2>
+
+            <div class="loading-line"></div>
+
+            <h1>19 ნოემბერი</h1>
+            <h2>17:00</h2>
+            <div class="loader"></div>
+        </div>
+    </div>
+    <div class="background-logo"></div>
+    <header class="header">
+        <div class="logo">
+            <a href="DI.html">დაიცავი ილიაუნი</a>
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li>
+                    <a href="DI.html">მთავარი</a>
+                </li>
+                <li>
+                    <a href="about.html">ჩვენს შესახებ</a>
+                </li>
+                <li>
+                    <a href="news.html">სიახლეები</a>
+                </li>
+                <li>
+                    <a href="contact.html">კონტაქტი</a>
+                </li>
+                <li>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfZ9UZ4f-0jOJkUJnNiHIbv2VGQWDZfTjzT7-0yVQfq4nONjQ/viewform" class="join-button">
+                        გაწევრიანდი
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-content">
+        <section class="hero">
+            <p class="small-title">
+                ჩვენი უნივერსიტეტი • ჩვენი მომავალი
+            </p>
+            <h1>
+                დაიცავი <span>ილიაუნი</span>
+            </h1>
+            <p class="hero-description">
+                განათლება არის უფლება და არა პრივილეგია.
+                ჩვენი ხმა მნიშვნელოვანია.
+                ერთად დავიცვათ თავისუფალი და ხარისხიანი განათლება.
+            </p>
+            <div class="hero-buttons">
+                <a href="about.html" class="primary-button">
+                    გაიგე მეტი
+                </a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfZ9UZ4f-0jOJkUJnNiHIbv2VGQWDZfTjzT7-0yVQfq4nONjQ/viewform" class="secondary-button">
+                    შემოგვიერთდი
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="copyright">© 2026 G.M</p>
+
+        <div class="social-links">
+
+            <a href="https://www.facebook.com/profile.php?id=61574919671418" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+                Facebook
+            </a>
+
+            <a href="https://www.instagram.com/daitsavi_iliauni/" target="_blank">
+                <i class="fab fa-instagram"></i>
+                Instagram
+            </a>
+
+            <a href="https://www.tiktok.com/@daitsavi_iliauni?is_from_webapp=1&sender_device=pc" target="_blank">
+                <i class="fab fa-tiktok"></i>
+                TikTok
+            </a>
+
+        </div>
+
+        <p class="footer-slogan">
+            ჩვენი უნივერსიტეტი. ჩვენი მომავალი.
+        </p>
+    </footer>
+    <script>
+        let currentLanguage = localStorage.getItem("language") || "ka";
+
+        function changeLanguage(lang) {
+            currentLanguage = lang;
+
+            document.querySelectorAll("[data-ka]").forEach(element => {
+                element.textContent = element.getAttribute("data-" + lang);
+            });
+
+            document.documentElement.lang = lang;
+
+            document.querySelector(".language-button").textContent =
+                lang === "ka" ? "ENG" : "ქარ";
+
+            localStorage.setItem("language", lang);
+        }
+
+        function toggleLanguage() {
+            changeLanguage(currentLanguage === "ka" ? "en" : "ka");
+        }
+
+        changeLanguage(currentLanguage);
+    </script>
+    <script>
+        window.addEventListener("load", function() {
+            setTimeout(function() {
+                document
+                    .getElementById("loadingScreen")
+                    .classList.add("hide");
+            }, 1000);
+        });
+    </script>
+    <script>
+    window.addEventListener("scroll", function() {
+        const header = document.querySelector(".header");
+
+        if (window.scrollY > 50) {
+            header.classList.add("scrolled");
+        } else {
+            header.classList.remove("scrolled");
+        }
+    });
+    </script>
+</body>
+</html>

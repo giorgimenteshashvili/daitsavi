@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>დაიცავი ილიაუნი</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="icon" href="pic/logo.jpg" type="image/png">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">დაიცავი ილიაუნი</a>
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li>
+                    <a href="index.html">მთავარი</a>
+                </li>
+                <li>
+                    <a href="about.html">ჩვენს შესახებ</a>
+                </li>
+                <li>
+                    <a href="news.html">სიახლეები</a>
+                </li>
+                <li>
+                    <a href="contact.html">კონტაქტი</a>
+                </li>
+                <li>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfZ9UZ4f-0jOJkUJnNiHIbv2VGQWDZfTjzT7-0yVQfq4nONjQ/viewform" class="join-button">
+                        გაწევრიანდი
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="contact-section">
+        <div class="contact-heading">
+            <span class="section-label">ILIAUNI</span>
+            <h1>დაგვიკავშირდით</h1>
+            <p>
+                თქვენი ხმა, იდეები და ჩართულობა ჩვენი ერთიანობისა და საერთო მიზნის მიღწევის საფუძველია.</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>საკონტაქტო ინფორმაცია</h2>
+                <p class="info-description">
+                    დაგვიკავშირდით.
+                </p>
+                <div class="info-item">
+                    <div class="info-icon">✉</div>
+                    <div>
+                        <h3>ელფოსტა</h3>
+                        <p>iliaunismcvelebi@gmail.com</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon">⌖</div>
+                    <div>
+                        <h3>მისამართი</h3>
+                        <p>თბილისი, ჭავჭავაძის #32, ილიას სახელმწიფო უნივერსიტეტი</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon">◷</div>
+                    <div>
+                        <h3>სამუშაო საათები</h3>
+                        <p>ორშაბათი - შაბათი</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-about">
+                <h2>რატომ უნდა დაგვიკავშირდეთ?</h2>
+                <p class="about-description">
+                    ჩვენთვის მნიშვნელოვანია თითოეული სტუდენტის ხმა, ჩართულობა და მხარდაჭერა. მზად ვართ მოვისმინოთ თქვენი მოსაზრებები, ვუპასუხოთ კითხვებს და ვითანამშრომლოთ ყველა იმ ადამიანთან, ვისაც ილიაუნის მომავალი ადარდებს.</p>
+                <div class="reason-item">
+                    <span class="reason-number">01</span>
+                    <div>
+                        <h3>ინფორმაციის მიღება</h3>
+                        <p>
+                           მიიღეთ სიახლეები, განცხადებები და მნიშვნელოვანი ინფორმაცია მოძრაობის საქმიანობის შესახებ.
+                        </p>
+                    </div>
+                </div>
+                <div class="reason-item">
+                    <span class="reason-number">02</span>
+                    <div>
+                        <h3>სტუდენტური საკითხები</h3>
+                        <p>
+                            გაგვიზიარეთ თქვენი პრობლემები, მოსაზრებები და ინიციატივები.
+                        </p>
+                    </div>
+                </div>
+                <div class="reason-item">
+                    <span class="reason-number">03</span>
+                    <div>
+                        <h3>თანამშრომლობა</h3>
+                        <p>
+                            შემოგვიერთდით და ერთად ვიმუშაოთ საერთო მიზნისთვის.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+        <footer class="footer">
+        <p class="copyright">© 2026 G.M</p>
+
+        <div class="social-links">
+
+            <a href="https://www.facebook.com/profile.php?id=61574919671418" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+                Facebook
+            </a>
+
+            <a href="https://www.instagram.com/daitsavi_iliauni/" target="_blank">
+                <i class="fab fa-instagram"></i>
+                Instagram
+            </a>
+
+            <a href="https://www.tiktok.com/@daitsavi_iliauni?is_from_webapp=1&sender_device=pc" target="_blank">
+                <i class="fab fa-tiktok"></i>
+                TikTok
+            </a>
+
+        </div>
+
+        <p class="footer-slogan">
+            ჩვენი უნივერსიტეტი. ჩვენი მომავალი.
+        </p>
+    </footer>
+     <script>
+        const header = document.querySelector(".header");
+        window.addEventListener("scroll", function () {
+
+            if (window.scrollY > 50) {
+                header.classList.add("show");
+            } else {
+                header.classList.remove("show");
+            }
+
+        });
+    </script>
+</body>
+</html>
